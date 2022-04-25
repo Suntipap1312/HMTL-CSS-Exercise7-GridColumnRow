@@ -1,0 +1,32 @@
+.body {
+  padding: 0;
+  margin: 0;
+}
+
+.grid-container {
+  display: grid;
+  background-color: antiquewhite;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 100px);
+  text-align: center;
+}
+
+.grid-item {
+  background-color: aqua;
+  border: 1px solid black;
+  margin: 0;
+  padding: 0;
+}
+
+.grid1 {
+  /* grid-column = [grid-column-start] / [grid-column-end] */
+  /* grid-column: 1 / 4; */
+  grid-column: span 2;
+  grid-row: 2 / span 2;
+
+  /* grid-row = [grid-row-start] / [grid-row-end] */
+  /* grid-row: 1 / 5; */
+
+  /* grid-area = [grid-row-start] / [grid-column-start] / [grid-row-end] / [grid-column-end*/
+  /* grid-area: 4 / 2 / 5 / 3; */
+}
